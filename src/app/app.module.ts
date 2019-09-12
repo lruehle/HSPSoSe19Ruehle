@@ -12,6 +12,7 @@ import { OverviewCoursesOfferedComponent } from './components/overview-courses-o
 import { OverviewWeekComponent } from './components/overview-week/overview-week.component';
 import { OverviewWeekdayComponent } from './components/overview-weekday/overview-weekday.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
