@@ -1,3 +1,9 @@
-<p>
-  detail-topkurs works!
-</p>
+<h2>Topkurs</h2>
+
+<div *ngFor="let topcourse of topcourses">
+  <div *ngIf="topcourse.nid == nID">
+    <b>{{topcourse.title}}</b> <!-- bei beachvolleyball[787] ist der title noch einmal im body enthalten, er wird somit 2x ausgegeben-->
+    <p [innerHTML]="topcourse.body"></p>
+  </div>
+</div>
+

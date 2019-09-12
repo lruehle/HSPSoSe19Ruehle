@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'home' , component: HomeComponent},
   {path: 'DetailCourse', component: DetailKursComponent},
   {path: 'DetailNews', component: DetailNewsComponent},
-  {path: 'DetailTopCourse', component: DetailTopkursComponent},
+  {path: 'DetailTopCourse/:id', component: DetailTopkursComponent},
   {path: 'OverviewCategories', component: OverviewCoursCategoryComponent},
   {path: 'OverviewOffered', component: OverviewCoursesOfferedComponent},
   {path: 'OverviewWeek', component: OverviewWeekComponent},
