@@ -11,6 +11,7 @@ import { OverviewCoursCategoryComponent } from './components/overview-cours-cate
 import { OverviewCoursesOfferedComponent } from './components/overview-courses-offered/overview-courses-offered.component';
 import { OverviewWeekComponent } from './components/overview-week/overview-week.component';
 import { OverviewWeekdayComponent } from './components/overview-weekday/overview-weekday.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OverviewWeekdayComponent } from './components/overview-weekday/overview
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
