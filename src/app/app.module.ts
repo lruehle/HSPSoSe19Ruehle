@@ -12,7 +12,11 @@ import { OverviewCoursesOfferedComponent } from './components/overview-courses-o
 import { OverviewWeekComponent } from './components/overview-week/overview-week.component';
 import { OverviewWeekdayComponent } from './components/overview-weekday/overview-weekday.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClientModule} from '@angular/common/http';
+
+import {BsDropdownModule, CollapseModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
+
+import {DeviceDetectorModule} from 'ngx-device-detector';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +34,13 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot(),
+    CollapseModule.forRoot(),
+    DeviceDetectorModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]
