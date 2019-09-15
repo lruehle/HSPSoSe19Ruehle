@@ -13,7 +13,8 @@ import { OverviewWeekComponent } from './components/overview-week/overview-week.
 import { OverviewWeekdayComponent } from './components/overview-weekday/overview-weekday.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {BsDropdownModule, CollapseModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
-import {collapseAnimation} from 'ngx-bootstrap/collapse/collapse-animations';
+
+import {DeviceDetectorModule} from 'ngx-device-detector';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {collapseAnimation} from 'ngx-bootstrap/collapse/collapse-animations';
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    DeviceDetectorModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
