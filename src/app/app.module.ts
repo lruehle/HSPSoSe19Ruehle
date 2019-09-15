@@ -12,6 +12,8 @@ import { OverviewCoursesOfferedComponent } from './components/overview-courses-o
 import { OverviewWeekComponent } from './components/overview-week/overview-week.component';
 import { OverviewWeekdayComponent } from './components/overview-weekday/overview-weekday.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BsDropdownModule, CollapseModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
+import {collapseAnimation} from 'ngx-bootstrap/collapse/collapse-animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot(),
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HSPSoSe19Ruehle';
+  show = false;
+  toggleCollapse() {
+    this.show = !this.show;
+  }
 }
