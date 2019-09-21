@@ -3,9 +3,10 @@
   Keine neuen Nachrichten vorhanden.
 </div>
 <div *ngIf="news.length > 0">
-  <div *ngFor="let newsentry of news">
+  <div *ngFor="let newsentry of news; let i = index">
     <b> {{ newsentry.title }} </b>
     {{ newsentry.field_teasertext }}
+    <a routerLink="/DetailNews/{{i}}">Link zum Newsbeitrag</a>
   </div>
 </div>
 
@@ -13,8 +14,6 @@
   <h2>Topkurse</h2>
   <div *ngFor="let course of topcourses">
     <b>{{ course.title }}</b>
-    ID: {{ course.nid }}
     <a routerLink="/DetailTopCourse/{{ course.nid }}">Link zum Topkurs</a>
-    <p [innerHTML]="course.body"></p>
   </div>
 </div>

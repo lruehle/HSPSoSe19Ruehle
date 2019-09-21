@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {ActivatedRoute} from '@angular/router';
+
+
 
 @Component({
   selector: 'app-detail-news',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailNewsComponent implements OnInit {
 
-  constructor() { }
+  public nID;
+  public news;
+  constructor(private http: HttpClient, private route: ActivatedRoute ) {
+    this.news = [];
+  }
 
   ngOnInit() {
+    this.nID = this.route.snapshot.paramMap.get('id');
+    this.http.get('https://hochschulsport-koeln.de/json/news').subscribe((data) => (this.news = data));
   }
 
 }

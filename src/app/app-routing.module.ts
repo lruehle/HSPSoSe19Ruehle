@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: '' , redirectTo: 'home', pathMatch: 'full'},
   {path: 'home' , component: HomeComponent},
   {path: 'DetailCourse', component: DetailKursComponent},
-  {path: 'DetailNews', component: DetailNewsComponent},
+  {path: 'DetailNews/:id', component: DetailNewsComponent},
   {path: 'DetailTopCourse/:id', component: DetailTopkursComponent},
   {path: 'OverviewCategories', component: OverviewCoursCategoryComponent},
   {path: 'OverviewOffered', component: OverviewCoursesOfferedComponent},

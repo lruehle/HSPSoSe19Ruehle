@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -12,10 +12,9 @@ import { OverviewCoursesOfferedComponent } from './components/overview-courses-o
 import { OverviewWeekComponent } from './components/overview-week/overview-week.component';
 import { OverviewWeekdayComponent } from './components/overview-weekday/overview-weekday.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import {BsDropdownModule, CollapseModule, ModalModule, TooltipModule} from 'ngx-bootstrap';
-
 import {DeviceDetectorModule} from 'ngx-device-detector';
+
 
 
 @NgModule({
@@ -34,7 +33,7 @@ import {DeviceDetectorModule} from 'ngx-device-detector';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    HttpClientModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
