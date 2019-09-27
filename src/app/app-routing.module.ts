@@ -12,10 +12,10 @@ import {OverviewWeekdayComponent} from './components/overview-weekday/overview-w
 const routes: Routes = [
   {path: '' , redirectTo: 'home', pathMatch: 'full'},
   {path: 'home' , component: HomeComponent},
-  {path: 'DetailCourse', component: DetailKursComponent},
+  {path: 'DetailCourse/:id', component: DetailKursComponent},
   {path: 'DetailNews/:id', component: DetailNewsComponent},
   {path: 'DetailTopCourse/:id', component: DetailTopkursComponent},
-  {path: 'OverviewCategories', component: OverviewCoursCategoryComponent},
+  {path: 'OverviewCategories/:id', component: OverviewCoursCategoryComponent},
   {path: 'OverviewOffered', component: OverviewCoursesOfferedComponent},
   {path: 'OverviewWeek', component: OverviewWeekComponent},
   {path: 'OverviewWeekDay', component: OverviewWeekdayComponent},
