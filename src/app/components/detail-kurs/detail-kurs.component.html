@@ -1,3 +1,32 @@
-<p>
-  detail-kurs works!
-</p>
+<div class="container-fluid" *ngIf="course.length==0">
+  <div *ngFor="let courses of allcourses">
+    <div *ngIf="courses.id == courseId">
+      <b> Leider findet in diesem Semester kein {{courses.title}} Kurs statt </b>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" *ngIf="course.length>0">
+  <h2> {{course[0].title}}</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col"> Kurs </th>
+        <th scope="col"> Schwierigkeitslevel </th>
+        <th scope="col"> Ort </th>
+        <th scope="col"> Zeit </th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let c of course; let i = index">
+        <th scope="row"> {{c.title}} {{i + 1}} </th>
+        <td> {{c.field_schwierigkeitslevel}} </td>
+        <td> {{c.field_ort}}, {{c.field_postleitzahl}} {{c.field_stadt}} </td>
+        <td> {{c.field_wochentag}}, {{c.field_uhrzeit_beginn}}-{{c.field_uhrzeit_ende}} </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+

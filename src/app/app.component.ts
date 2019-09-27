@@ -8,6 +8,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class AppComponent {
 
+  navbarOpen = false;
   deviceInfo = null;
   title = 'HSPSoSe19Ruehle';
   showButton = false;
@@ -28,5 +29,8 @@ export class AppComponent {
   }
   toggleCollapse() {
     this.show = !this.show;
+  }
+  toggleNavbar(){
+    this.navbarOpen = !this.navbarOpen;
   }
 }

@@ -1,12 +1,12 @@
 <div class="container-fluid">
   <table class=" table table-dark">
     <thead>
-    <tr class="d-flex"><th> <h2>Kurse</h2></th></tr>
+    <tr class="d-flex"> <h2>Kurse</h2></tr>
     </thead>
     <tbody>
-    <div *ngFor="let course of categories">
-    <tr class="d-flex"> <td style="min-width:200px" class="col-12"> <a routerLink="/DetailCourse/{{ course.nid }}"> {{course.title}} </a> </td></tr>
-    </div>
+    <tr *ngFor="let course of categories" class="d-flex">
+      <td style="min-width:200px" class="col-12"> <a routerLink="/DetailCourse/{{ course.nid }}"> {{course.title}} </a> </td>
+    </tr>
     </tbody>
   </table>
 </div>
