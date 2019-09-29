@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-overview-week',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewWeekComponent implements OnInit {
 
-  constructor() { }
+  public weekday;
+  public id;
+  constructor(private http: HttpClient) {
+    this.weekday = [];
+}
 
   ngOnInit() {
+    this.http.get('https://hochschulsport-koeln.de/json/courses/' + this.id + '/?_format=json')
+      .subscribe((data) => {this.weekday = data; });
   }
 
 }

@@ -1,7 +1,53 @@
-.container-fluid{
-  margin-top: 5px;
+.bg{
+  background-color: rgba(56,56,56,0.3);
 }
+
+.container-fluid{
+  background-image: url('../assets/fireAlpha.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain ;
+  //background-size: 90% 90%;
+  background-attachment: fixed;
+}
+
 .navbar{
   //max-width: 170px;
-  margin-bottom: 1rem;
+  background-color: rgba(52, 58, 64, 0.95);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem 0.25rem;
+}
+
+.dropdown-menu{
+  opacity: 1;
+  background-color: #67737e;//#343a40;
+  padding-left: 1rem;
+  border-radius: 5px 5px;
+}
+
+.navbar-brand{
+  padding-top: 0.5rem;
+}
+
+#drpdown{
+}
+#btn{
+  color: rgba(255,255,255,.7);
+}
+
+li{
+  opacity: 0.8;
+}
+li:hover{
+  opacity: 1;
+}
+
+.router{
+  background-color: rgba(139,0,0,0.65);
+  color: azure;
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 0.25rem 0.5rem;
+  min-height: 700px;
 }

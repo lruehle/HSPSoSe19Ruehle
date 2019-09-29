@@ -9,12 +9,13 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 export class AppComponent {
 
   navbarOpen = false;
+  dropingdown = false;
   deviceInfo = null;
   title = 'HSPSoSe19Ruehle';
   showButton = false;
   show = true;
 
-  constructor(private deviceService: DeviceDetectorService) {this.detection();}
+  constructor(private deviceService: DeviceDetectorService) {this.detection(); }
   detection() {
     this.deviceInfo = this.deviceService.getDeviceInfo();
     const isMobile = this.deviceService.isMobile();
@@ -30,7 +31,10 @@ export class AppComponent {
   toggleCollapse() {
     this.show = !this.show;
   }
-  toggleNavbar(){
+  toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+  }
+  dropdown() {
+    this.dropingdown = !this.dropingdown;
   }
 }
