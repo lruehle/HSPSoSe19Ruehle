@@ -1,3 +1,95 @@
-<p>
-  overview-week works!
-</p>
+<div class="container-fluid">
+  <ul class="justify-content-start nav d-flex">
+    <button type="button" (click)="show(36)"> <a> Ballsport und Spiele </a></button>
+    <button type="button" (click)="show(1)"> <a> Kampfsport </a></button>
+    <button type="button" (click)="show(3)"> <a> Fitness </a></button>
+    <button type="button" (click)="show(4)"> <a> Gesundheitssport </a></button>
+    <button type="button" (click)="show(32)"> <a> Individualsport </a></button>
+    <button type="button" (click)="show(33)"> <a> Natursport </a></button>
+    <button type="button" (click)="show(6)"> <a> Tanzen </a></button>
+    <button type="button" (click)="show(34)"> <a> Wassersport </a></button>
+    <button type="button" (click)="show(35)"> <a> Wintersport </a></button>
+    <button type="button" (click)="show(7)"> <a> Campus Gummersbach </a></button>
+  </ul>
+  <div class="container-fluid" id="content">
+    <div class="row">
+      <div class="col">
+         <a class="day"> Montag </a>
+         <div *ngFor="let day of monday">
+           <div *ngIf="day.field_sportkategorien == course">
+             <div class="row">
+               <p>{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+             </div>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <a class="day"> Dienstag </a>
+        <div *ngFor="let day of tuesday">
+          <div *ngIf="day.field_sportkategorien == course">
+            <div class="row">
+              <p>{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <a class="day"> Mittwoch </a>
+        <div *ngFor="let day of wednesday">
+          <div *ngIf="day.field_sportkategorien == course">
+            <div class="row">
+              <p>{{day.field_kursverknuepfung}}<br>
+              {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <a class="day"> Donnerstag </a>
+        <div *ngFor="let day of thursday">
+          <div *ngIf="day.field_sportkategorien == course">
+            <div class="row">
+              <p>{{day.field_kursverknuepfung}} <br>
+              {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <a class="day"> Freitag </a>
+        <div *ngFor="let day of friday">
+          <div *ngIf="day.field_sportkategorien == course">
+            <div class="row">
+              <p>{{day.field_kursverknuepfung}}<br>
+             {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <a class="day"> Samstag </a>
+        <div *ngFor="let day of saturday">
+          <div *ngIf="day.field_sportkategorien == course">
+            <div class="row">
+              <p>{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <a class="day"> Sonntag </a>
+        <div *ngFor="let day of sunday">
+          <div *ngIf="day.field_sportkategorien == course">
+            <div class="row">
+              <p>{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

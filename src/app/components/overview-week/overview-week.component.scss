@@ -1,0 +1,35 @@
+ul{
+  ;
+}
+button{
+  margin-bottom: -5px;
+  border: solid black 2px;
+  border-radius: 7px 7px;
+  background-color: rgba(52, 58, 64, 0.95);
+  color: azure ;
+}
+
+button:hover{
+  background-color: rgba(152, 158, 164, 1);
+}
+button:focus{
+  background-color: rgba(152, 158, 164, 1);
+}
+
+#content{
+  margin-top: 2rem;
+  border: solid black;
+  border-width: 2px 0px 2px 2px;
+}
+.col{
+  border-right: 2px solid black
+}
+
+.day{
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+p{
+  margin: 0rem 1rem;
+  border-top: 2px solid black;
+}
