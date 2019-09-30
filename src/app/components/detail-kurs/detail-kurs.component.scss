@@ -1,5 +1,23 @@
 
 .container-fluid{
-  background-color: rgba(52, 58, 64, 0.7);
+  min-height: 650px;
+  background-image: url('../../../assets/airAlpha.png');
+  background-color: rgba(204, 238, 255, 0.7);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain ;
+  background-attachment: fixed;
   border-radius: 0.5rem 0.5rem;
+
+}
+
+h2{
+  padding-top: 10px;
+  color: darkslategray;
+}
+table{
+  background-color: rgba(52, 58, 64, 0.7);
+  border-radius: 0.5rem;
+  color: azure;
 }

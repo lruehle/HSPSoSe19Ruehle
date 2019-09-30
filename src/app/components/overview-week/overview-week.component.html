@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id="all">
   <ul class="justify-content-start nav d-flex">
     <button type="button" (click)="show(36)"> <a> Ballsport und Spiele </a></button>
     <button type="button" (click)="show(1)"> <a> Kampfsport </a></button>
@@ -12,80 +12,89 @@
     <button type="button" (click)="show(7)"> <a> Campus Gummersbach </a></button>
   </ul>
   <div class="container-fluid" id="content">
-    <div class="row">
+    <div class="row" id="inner">
       <div class="col">
-         <a class="day"> Montag </a>
+        <div class="row day">
+         <a> Montag </a>
+        </div>
          <div *ngFor="let day of monday">
            <div *ngIf="day.field_sportkategorien == course">
-             <div class="row">
-               <p>{{day.field_kursverknuepfung}}<br>
-               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+             <div class="row field">
+               <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+               {{day.field_ort}}</a>
              </div>
             </div>
           </div>
       </div>
       <div class="col">
-        <a class="day"> Dienstag </a>
+        <a class="row day"> Dienstag </a>
         <div *ngFor="let day of tuesday">
           <div *ngIf="day.field_sportkategorien == course">
-            <div class="row">
-              <p>{{day.field_kursverknuepfung}}<br>
-               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            <div class="row field">
+              <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+                {{day.field_ort}}</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <a class="day"> Mittwoch </a>
+        <a class="row day"> Mittwoch </a>
         <div *ngFor="let day of wednesday">
           <div *ngIf="day.field_sportkategorien == course">
-            <div class="row">
-              <p>{{day.field_kursverknuepfung}}<br>
-              {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            <div class="row field">
+              <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}}<br>
+              {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+                {{day.field_ort}}</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <a class="day"> Donnerstag </a>
+        <a class="row day"> Donnerstag </a>
         <div *ngFor="let day of thursday">
           <div *ngIf="day.field_sportkategorien == course">
-            <div class="row">
-              <p>{{day.field_kursverknuepfung}} <br>
-              {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            <div class="row field">
+              <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}} <br>
+              {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+                {{day.field_ort}}</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <a class="day"> Freitag </a>
+        <a class="row day"> Freitag </a>
         <div *ngFor="let day of friday">
           <div *ngIf="day.field_sportkategorien == course">
-            <div class="row">
-              <p>{{day.field_kursverknuepfung}}<br>
-             {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            <div class="row field">
+              <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}}<br>
+             {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+                {{day.field_ort}}</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <a class="day"> Samstag </a>
+        <a class="row day"> Samstag </a>
         <div *ngFor="let day of saturday">
           <div *ngIf="day.field_sportkategorien == course">
-            <div class="row">
-              <p>{{day.field_kursverknuepfung}}<br>
-               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            <div class="row field">
+              <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+                {{day.field_ort}}</a>
             </div>
           </div>
         </div>
       </div>
       <div class="col">
-        <a class="day"> Sonntag </a>
+        <a class="row day"> Sonntag </a>
         <div *ngFor="let day of sunday">
           <div *ngIf="day.field_sportkategorien == course">
-            <div class="row">
-              <p>{{day.field_kursverknuepfung}}<br>
-               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}</p>
+            <div class="row field">
+              <a class="ab" href = "/DetailCourse/{{ day.nid }}">{{day.field_kursverknuepfung}}<br>
+               {{day.field_uhrzeit_beginn}} - {{day.field_uhrzeit_ende}}
+                {{day.field_ort}}</a>
             </div>
           </div>
         </div>

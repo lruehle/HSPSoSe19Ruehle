@@ -1,7 +1,24 @@
-a{
-  font-size: 150% ;
+.container-fluid{
+  min-height: 650px;
+  background-image: url('../../../assets/airAlpha.png'); //earth
+  background-color: rgba(0, 128, 0, 0.7);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain ;
+  background-attachment: fixed;
+  border-radius: 0.5rem 0.5rem;
+  padding: 10px;
 }
+
 table{
   background-color: rgba(52, 58, 64, 0.7);
   border-radius: 0.5rem 0.5rem;
+}
+a{
+  font-size: 120% ;
+}
+
+h2{
+  padding-left: 10px;
 }
