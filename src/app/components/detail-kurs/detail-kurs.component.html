@@ -1,7 +1,8 @@
 <div class="container-fluid" *ngIf="course.length==0">
   <div *ngFor="let courses of allcourses">
     <div *ngIf="courses.id == courseId">
-      <b> Leider findet in diesem Semester kein {{courses.title}} Kurs statt </b>
+      <br>
+      <b style="color:black;"> Leider findet in diesem Semester kein {{courses.title}} Kurs statt </b> <!--manche Kurse haben doppelten Titel im Json-->
     </div>
   </div>
 </div>

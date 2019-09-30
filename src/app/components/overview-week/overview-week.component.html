@@ -14,9 +14,7 @@
   <div class="container-fluid" id="content">
     <div class="row" id="inner">
       <div class="col">
-        <div class="row day">
-         <a> Montag </a>
-        </div>
+         <a class="row day" href="/OverviewWeekDay/{{8}}"> Montag </a>
          <div *ngFor="let day of monday">
            <div *ngIf="day.field_sportkategorien == course">
              <div class="row field">
@@ -28,7 +26,7 @@
           </div>
       </div>
       <div class="col">
-        <a class="row day"> Dienstag </a>
+        <a class="row day" href="/OverviewWeekDay/{{9}}" > Dienstag </a>
         <div *ngFor="let day of tuesday">
           <div *ngIf="day.field_sportkategorien == course">
             <div class="row field">
@@ -40,7 +38,7 @@
         </div>
       </div>
       <div class="col">
-        <a class="row day"> Mittwoch </a>
+        <a class="row day" href="/OverviewWeekDay/{{10}}"> Mittwoch </a>
         <div *ngFor="let day of wednesday">
           <div *ngIf="day.field_sportkategorien == course">
             <div class="row field">
@@ -52,7 +50,7 @@
         </div>
       </div>
       <div class="col">
-        <a class="row day"> Donnerstag </a>
+        <a class="row day" href="/OverviewWeekDay/{{11}}"> Donnerstag </a>
         <div *ngFor="let day of thursday">
           <div *ngIf="day.field_sportkategorien == course">
             <div class="row field">
@@ -64,7 +62,7 @@
         </div>
       </div>
       <div class="col">
-        <a class="row day"> Freitag </a>
+        <a class="row day" href="/OverviewWeekDay/{{12}}"> Freitag </a>
         <div *ngFor="let day of friday">
           <div *ngIf="day.field_sportkategorien == course">
             <div class="row field">
@@ -76,7 +74,7 @@
         </div>
       </div>
       <div class="col">
-        <a class="row day"> Samstag </a>
+        <a class="row day" href="/OverviewWeekDay/{{13}}"> Samstag </a>
         <div *ngFor="let day of saturday">
           <div *ngIf="day.field_sportkategorien == course">
             <div class="row field">
@@ -88,7 +86,7 @@
         </div>
       </div>
       <div class="col">
-        <a class="row day"> Sonntag </a>
+        <a class="row day" href="/OverviewWeekDay/{{14}}"> Sonntag </a>
         <div *ngFor="let day of sunday">
           <div *ngIf="day.field_sportkategorien == course">
             <div class="row field">

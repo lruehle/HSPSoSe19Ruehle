@@ -1,20 +1,24 @@
 <div class="container-fluid">
-  <h2>News</h2>
-  <div *ngIf="news.length == 0">
-    Keine neuen Nachrichten vorhanden.
-  </div>
-  <div *ngIf="news.length > 0">
-    <div *ngFor="let newsentry of news; let i = index">
-      <b> {{ newsentry.title }} </b>
-      <a routerLink="/DetailNews/{{i}}"> Link zum Newsbeitrag</a>
+  <h2> Willkommen im Hochschulsport!</h2>
+  <div class="news">
+    <h2>News</h2>
+    <div *ngIf="news.length == 0">
+      Keine neuen Nachrichten vorhanden.
+    </div>
+    <div *ngIf="news.length > 0">
+      <div *ngFor="let newsentry of news; let i = index">
+        <b> {{ newsentry.title }} </b>
+        <a routerLink="/DetailNews/{{i}}"> Link zum Newsbeitrag</a>
+      </div>
     </div>
   </div>
-  <br>
-  <div *ngIf="topcourses.length > 0">
-    <h2>Topkurse</h2>
-    <div *ngFor="let course of topcourses">
-      <b>{{ course.title }}</b>
-      <a routerLink="/DetailTopCourse/{{ course.nid }}"> Link zum Topkurs</a>
+  <div class="tpc">
+    <div *ngIf="topcourses.length > 0">
+      <h2>Topkurse</h2>
+      <div *ngFor="let course of topcourses">
+        <b>{{ course.title }}</b>
+        <a routerLink="/DetailTopCourse/{{ course.nid }}"> Link zum Topkurs</a>
+      </div>
     </div>
   </div>
 </div>

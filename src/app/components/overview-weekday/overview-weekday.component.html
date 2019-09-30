@@ -1,3 +1,31 @@
-<p>
-  overview-weekday works!
-</p>
+<div class="container-fluid" class="all">
+  <ul class="justify-content-start nav d-flex days">
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 8 }}"><div *ngIf="dayId==8" class="active"> Montag </div>
+      <div *ngIf="dayId!=8"> Montag </div>  </a> </li>
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 9 }}"><div *ngIf="dayId==9" class="active">Dienstag</div>
+      <div *ngIf="dayId!=9"> Dienstag </div></a></li>
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 10 }}"><div *ngIf="dayId==10" class="active">Mittwoch</div>
+      <div *ngIf="dayId!=10"> Mittwoch </div></a></li>
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 11 }}"><div *ngIf="dayId==11" class="active">Donnerstag</div>
+      <div *ngIf="dayId!=11"> Donnerstag</div></a></li>
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 12 }}"><div *ngIf="dayId==12" class="active">Freitag</div>
+      <div *ngIf="dayId!=12"> Freitag </div></a></li>
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 13 }}"><div *ngIf="dayId==13" class="active">Samstag</div>
+      <div *ngIf="dayId!=13"> Samstag</div></a></li>
+    <li class="nav-item col"> <a class="nav-link" href = "/OverviewWeekDay/{{ 14 }}"><div *ngIf="dayId==14" class="active">Sonntag</div>
+      <div *ngIf="dayId!=14"> Sonntag </div></a></li>
+  </ul>
+  <div class="container-fluid" id="content">
+    <ul class="justify-content-start nav d-flex list-group">
+      <div *ngFor="let d of day">
+        <li class="list-group-item">
+          <a class="ab" href = "/DetailCourse/{{ d.nid }}">
+            {{d.field_kursverknuepfung}}
+            {{d.field_uhrzeit_beginn}} - {{d.field_uhrzeit_ende}}
+            {{d.field_ort}}
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>

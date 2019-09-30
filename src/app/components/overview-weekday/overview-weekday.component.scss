@@ -1,6 +1,6 @@
-.container-fluid{
+.all{
   min-height: 650px;
-  background-image: url('../../../assets/airAlpha.png'); //earth
+  background-image: url('../../../assets/earthAlpha2.png');
   background-color: rgba(0, 128, 0, 0.7);
   height: 100%;
   background-position: center;
@@ -9,4 +9,45 @@
   background-attachment: fixed;
   border-radius: 0.5rem 0.5rem;
   padding: 10px;
+}
+
+a{
+  color: azure;
+}
+.content{
+  margin-top: 1.5rem;
+  border: 2px solid black;
+  background-color: rgba(52, 58, 64, 0.7);
+  border-radius: 0.5rem 0.5rem;
+}
+
+.days{
+  padding: 0.25rem;
+  //background-color: rgba(52, 58, 64, 0.95);
+}
+.nav-item{
+  font-size: 0.8rem;
+  margin: 0.125rem;
+  background-color: rgba(52, 58, 64, 0.95);
+  border-radius: 0.5rem 0.5rem;
+}
+.nav-item:hover{
+  background-color: rgba(152, 158, 164, 0.7);
+}
+.nav-item:active{
+  background-color: rgba(152, 158, 164, 0.7);
+}
+.list-group-item{
+  margin-top: 0.2rem;
+  padding-left: 0.25rem;
+  background-color: rgba(152, 158, 164, 0.4);
+}
+.ab{
+  color: rgb(13, 13, 13);
+  font-size: 1rem;
+}
+
+.active{
+  font-weight: bold;
+  font-size: 1rem;
 }

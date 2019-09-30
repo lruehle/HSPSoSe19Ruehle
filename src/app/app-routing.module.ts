@@ -18,7 +18,8 @@ const routes: Routes = [
   {path: 'OverviewCategories/:id', component: OverviewCoursCategoryComponent},
   {path: 'OverviewOffered', component: OverviewCoursesOfferedComponent},
   {path: 'OverviewWeek', component: OverviewWeekComponent},
-  {path: 'OverviewWeekDay', component: OverviewWeekdayComponent},
+  {path: 'OverviewWeekDay/:id', component: OverviewWeekdayComponent},
+  {path: 'OverviewWeekDay' , redirectTo: 'OverviewWeekDay/8', pathMatch: 'full'}
 ];
 
 @NgModule({
